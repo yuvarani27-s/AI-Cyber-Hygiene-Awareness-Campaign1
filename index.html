@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Cyber Hygiene Awareness Campaign for Students - Interactive educational platform teaching cybersecurity habits, password safety, phishing detection, and cybercrime reporting in India.">
+  <meta name="keywords" content="cyber hygiene, student cybersecurity, phishing awareness, password strength checker, cyber safety quiz, cybercrime India 1930, AI safety">
+  <meta name="author" content="AI Cyber Hygiene Campaign">
+  <title>AI Cyber Hygiene Awareness Campaign for Students</title>
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="CyberShield AI Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 8v4"/>
+            <path d="M12 16h.01"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">CyberHygiene<span class="highlight-cyan">.AI</span></span>
+          <span class="logo-tag">Student Defense Initiative</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#tips" class="nav-link">Hygiene Tips</a>
+        <a href="#phishing" class="nav-link">Phishing Lab</a>
+        <a href="#password-checker" class="nav-link">Password Check</a>
+        <a href="#quiz" class="nav-link">Safety Quiz</a>
+        <a href="#checklist" class="nav-link">Daily Checklist</a>
+        <a href="#campaign" class="nav-link">Awareness Hub</a>
+        <a href="#report" class="nav-link emergency-link">Report Crime (1930)</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#report" class="btn btn-outline-cyan btn-sm nav-helpline-btn" title="National Cyber Helpline 1930">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Helpline 1930</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-grid-pattern"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Student Cybersecurity & AI Threat Awareness</span>
+          </div>
+          
+          <h1 class="hero-title">
+            AI Cyber Hygiene Awareness <br>
+            <span class="gradient-text">for Next-Gen Students</span>
+          </h1>
+          
+          <p class="hero-desc">
+            In an era of generative AI voice clones, automated spear phishing, and digital campus threats, 
+            learn proactive defense habits. Test passwords locally, inspect real phishing attacks, take the interactive quiz, 
+            and master digital safety.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#tips" class="btn btn-cyan btn-lg">
+              <span>Start Learning</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#password-checker" class="btn btn-outline-light btn-lg">
+              <span>Test Password</span>
+            </a>
+            <a href="#quiz" class="btn btn-ghost btn-lg">
+              <span>Take Quiz</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Private & Client-Side</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">10+</span>
+              <span class="metric-label">Interactive Modules</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">1930</span>
+              <span class="metric-label">Official Cyber Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Live Cyber Shield Card -->
+        <div class="hero-visual">
+          <div class="cyber-shield-card">
+            <div class="shield-card-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">CYBER_DEFENSE_RADAR // ACTIVE</div>
+              <span class="status-live">LIVE</span>
+            </div>
+
+            <div class="shield-graphic-wrap">
+              <div class="radar-circle radar-outer"></div>
+              <div class="radar-circle radar-mid"></div>
+              <div class="radar-circle radar-inner"></div>
+              <div class="radar-sweep"></div>
+              <div class="shield-core-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Rotating Quick Threat Alert -->
+            <div class="shield-card-body">
+              <div class="threat-alert-box">
+                <div class="alert-tag">FEATURED CYBER HYGIENE RULE</div>
+                <h4 id="rotating-tip-title">Rule #1: The AI Voice Clone Trap</h4>
+                <p id="rotating-tip-desc">Scammers can clone a student's voice in 3 seconds from social media reels. Always establish a family offline safe-word.</p>
+              </div>
+
+              <div class="shield-features-list">
+                <div class="shield-feat-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>Zero Data Transmission Guarantee</span>
+                </div>
+                <div class="shield-feat-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>National Cybercrime Helpline 1930 Guidance</span>
+                </div>
+                <div class="shield-feat-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  <span>College Capstone Educational Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: Cyber Hygiene Tips -->
+    <section class="section tips-section" id="tips">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">PRACTICAL DEFENSE PROTOCOLS</div>
+          <h2 class="section-title">Essential Cyber Hygiene for Students</h2>
+          <p class="section-desc">
+            Cyber hygiene isn't rocket science; it's a collection of consistent digital habits that protect 99% of student accounts from compromise.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-tabs" role="tablist" aria-label="Tip Categories">
+          <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All Habits</button>
+          <button class="filter-tab" data-category="passwords" role="tab" aria-selected="false">Passwords & 2FA</button>
+          <button class="filter-tab" data-category="network" role="tab" aria-selected="false">Wi-Fi & Browsing</button>
+          <button class="filter-tab" data-category="software" role="tab" aria-selected="false">Software & Updates</button>
+          <button class="filter-tab" data-category="privacy" role="tab" aria-selected="false">Privacy & Socials</button>
+          <button class="filter-tab" data-category="ai" role="tab" aria-selected="false">AI Threat Defense</button>
+        </div>
+
+        <!-- Tips Grid -->
+        <div class="tips-grid" id="tips-grid">
+
+          <!-- Tip 1: Strong Passwords -->
+          <article class="tip-card" data-category="passwords">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <span class="tip-badge">Core Foundation</span>
+            </div>
+            <h3 class="tip-title">Passphrases Over Short Passwords</h3>
+            <p class="tip-summary">
+              Replace single complex words with long 4-word passphrases like <code>Falcon#Coffee$Library!99</code>. Length defeats brute-force attacks exponential times faster than complexity.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> A 7-character password is cracked in milliseconds by modern GPU clusters.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Use at least 14-16 characters</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Never reuse your college email password</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Store in open-source password managers</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>Password reuse across gaming sites, student forums, and campus portals is the #1 vector for "credential stuffing". When one minor forum leaks, attackers script automated logins across your Google, GitHub, and college accounts.</p>
+            </div>
+          </article>
+
+          <!-- Tip 2: Two-Factor Authentication -->
+          <article class="tip-card" data-category="passwords">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <span class="tip-badge">Uncompromising Barrier</span>
+            </div>
+            <h3 class="tip-title">Hardware / App-Based 2FA</h3>
+            <p class="tip-summary">
+              Turn on Two-Factor Authentication (2FA) everywhere. Prefer Authenticator Apps (Google Authenticator, Aegis, Bitwarden) over SMS OTPs which are susceptible to SIM swapping.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> SMS OTPs can be intercepted via telecom SS7 flaws or social-engineered SIM swaps.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Enable TOTP apps for all social & email accounts</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Save offline one-time emergency backup codes</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Never approve sudden random login prompts</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>Beware of "MFA Fatigue" or "Prompt Bombing": if you suddenly receive 10 notification popups asking to approve login at 3 AM, do NOT tap approve to stop the alerts! Change your password immediately.</p>
+            </div>
+          </article>
+
+          <!-- Tip 3: Campus & Public Wi-Fi -->
+          <article class="tip-card" data-category="network">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+              </div>
+              <span class="tip-badge">Network Defense</span>
+            </div>
+            <h3 class="tip-title">Public & Campus Wi-Fi Hygiene</h3>
+            <p class="tip-summary">
+              Unencrypted Wi-Fi in cafes, libraries, and airports allows rogue access points ("Evil Twin" hotspots) to snoop traffic. Turn off auto-connect and always ensure HTTPS.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> Man-In-The-Middle (MITM) attackers harvest unencrypted cookies, session tokens, and credentials.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Disable "Connect automatically to open networks"</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Never make banking or UPI payments on public Wi-Fi</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Use a trusted VPN or mobile hotspot instead</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>Rogue actors set up small portable devices broadcasting "College_Free_WiFi". Any student whose laptop is set to auto-connect joins the rogue hotspot, routing all unencrypted traffic through the attacker's analyzer.</p>
+            </div>
+          </article>
+
+          <!-- Tip 4: Software & Device Updates -->
+          <article class="tip-card" data-category="software">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+              </div>
+              <span class="tip-badge">System Hardening</span>
+            </div>
+            <h3 class="tip-title">Zero-Day & Patch Management</h3>
+            <p class="tip-summary">
+              "Remind me tomorrow" is an invitation to malware. Operating system, browser, and smartphone updates patch publicly known zero-day exploits actively abused by malware kits.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> Unpatched Chromium and WebKit flaws allow remote drive-by malware execution from malicious ads.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Enable automatic OS & browser updates</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Audit browser extensions & remove unused add-ons</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Never download cracked games, torrents, or patchers</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>Student computers are often compromised via "game cracks" or "free textbook PDF" download sites bundled with silent infostealer malware (like RedLine, Lumma). Infostealers silently copy all your saved browser cookies and session keys.</p>
+            </div>
+          </article>
+
+          <!-- Tip 5: Privacy & Social Media Oversharing -->
+          <article class="tip-card" data-category="privacy">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <span class="tip-badge">Privacy Shield</span>
+            </div>
+            <h3 class="tip-title">Digital Footprint & Anti-Doxxing</h3>
+            <p class="tip-summary">
+              Posting photos of your college ID card, exam admit card, travel flight tickets, or hostel room leaks sensitive metadata (barcode, roll numbers, DOB) used for social engineering.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> Attackers use your public birthday and mother's maiden name to answer bank security questions.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Blur QR codes and roll numbers on celebration posts</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Turn off real-time location tagging on Instagram/Snap</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Lock social profiles to verified contacts only</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>Boarding passes, concert tickets, and campus ID cards contain 2D barcodes containing your full legal name, government identification, and account reference numbers. Scammers decode them directly from high-resolution Instagram posts.</p>
+            </div>
+          </article>
+
+          <!-- Tip 6: AI Threat Defense -->
+          <article class="tip-card" data-category="ai">
+            <div class="tip-card-top">
+              <div class="tip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <span class="tip-badge">AI Safety</span>
+            </div>
+            <h3 class="tip-title">AI Voice Clones & Prompt Privacy</h3>
+            <p class="tip-summary">
+              Generative AI enables convincing voice clones and synthetic phishing. Never paste API keys, confidential assignments, or personal IDs into public AI prompt windows.
+            </p>
+            <div class="tip-risk-box">
+              <strong>Risk:</strong> Scammers clone a student's voice to panic parents into sending emergency money.
+            </div>
+            <div class="tip-checklist">
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Establish an emergency verbal "Safe-Word" with parents</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Hang up and call back via trusted standard phone line</span></label>
+              <label class="check-item"><input type="checkbox" disabled checked> <span>Keep confidential student data out of public LLMs</span></label>
+            </div>
+            <button class="btn-card-expand" aria-expanded="false">
+              <span>Detailed Best Practice</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="tip-detail-drawer">
+              <p>If your family receives an urgent phone call claiming you've been arrested or hospitalized and requesting immediate UPI transfer, urge them to pause: call your phone directly, or verify with campus warden before transferring any funds.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Phishing Awareness & Interactive Inspector -->
+    <section class="section phishing-section" id="phishing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">INTERACTIVE THREAT LAB</div>
+          <h2 class="section-title">Phishing Awareness & Link Inspector</h2>
+          <p class="section-desc">
+            Phishing is the #1 gateway for campus cyber incidents. Learn how to dissect deceptive messages, catch spoofed domains, and avoid falling for psychological traps.
+          </p>
+        </div>
+
+        <div class="phishing-lab-container">
+          <!-- Scenario Tabs -->
+          <div class="scenario-selector" role="tablist" aria-label="Phishing Scenarios">
+            <button class="scenario-btn active" data-scenario="email" role="tab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Scenario 1: College Exam Alert (Email)</span>
+            </button>
+            <button class="scenario-btn" data-scenario="sms" role="tab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              <span>Scenario 2: Bank KYC Blocked (SMS)</span>
+            </button>
+            <button class="scenario-btn" data-scenario="social" role="tab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>Scenario 3: Fake Internship Offer (DM)</span>
+            </button>
+          </div>
+
+          <!-- Phishing Viewer & Interactive Inspector -->
+          <div class="phishing-workspace">
+            
+            <!-- Message Mockup Window -->
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-header-title" id="mockup-type-title">Inbound Message: Suspicious Email</div>
+                <div class="mockup-flag-toggle">
+                  <button class="btn btn-xs btn-outline-cyan" id="toggle-red-flags-btn">
+                    <span class="pulse-dot"></span>
+                    <span id="flag-btn-text">Highlight Red Flags</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dynamic Message Container -->
+              <div class="mockup-body" id="mockup-body-content">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Analysis Sidebar & Explanation -->
+            <div class="phishing-analysis-panel">
+              <div class="analysis-card">
+                <div class="analysis-header">
+                  <div class="threat-level-badge level-danger">HIGH THREAT DETECTED</div>
+                  <h3 class="analysis-title" id="analysis-title">Anatomy of the Deception</h3>
+                </div>
+
+                <div class="red-flags-list" id="red-flags-list">
+                  <!-- Injected via JavaScript -->
+                </div>
+
+                <!-- Interactive Verification Tooltip Simulator -->
+                <div class="url-inspector-box">
+                  <div class="inspector-label">HYPERLINK DESTINATION DECODER</div>
+                  <div class="inspector-display">
+                    <span class="disp-label">Displayed Text:</span>
+                    <code class="disp-text" id="disp-text">portal.university.ac.in/verify</code>
+                  </div>
+                  <div class="inspector-display">
+                    <span class="disp-label">Actual Real Destination:</span>
+                    <code class="disp-actual text-danger" id="disp-actual">http://univ-portal-login.secure-verify-student.xyz/auth/steal.php</code>
+                  </div>
+                  <p class="inspector-hint">
+                    💡 <strong>Golden Rule:</strong> Never judge a link by the text on screen. On desktop, hover to preview the true URL in the bottom-left corner. On mobile, long-press to view the destination before releasing!
+                  </p>
+                </div>
+
+                <!-- Phishing Quick Test -->
+                <div class="interactive-decision-box">
+                  <span class="decision-prompt">Would you click or take action on this message?</span>
+                  <div class="decision-btns">
+                    <button class="btn btn-sm btn-danger decision-btn" data-choice="click">Yes, Click / Reply</button>
+                    <button class="btn btn-sm btn-success decision-btn" data-choice="report">No, Mark Phishing & Report</button>
+                  </div>
+                  <div class="decision-feedback" id="decision-feedback" style="display: none;"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- General Red Flag Reference Grid -->
+          <div class="phishing-rules-strip">
+            <div class="rule-box">
+              <span class="rule-num">01</span>
+              <h4>Artificial Urgency</h4>
+              <p>"Account suspended in 2 hours", "Pay now or fail semester". Panic reduces rational thinking.</p>
+            </div>
+            <div class="rule-box">
+              <span class="rule-num">02</span>
+              <h4>Typosquatting Domains</h4>
+              <p>Look for extra characters: <code>amzon-verify.com</code> or <code>sbi-netbanking.club</code> instead of official roots.</p>
+            </div>
+            <div class="rule-box">
+              <span class="rule-num">03</span>
+              <h4>Generic Salutations</h4>
+              <p>"Dear Customer / Student" when your real institution or bank already knows your registered full name.</p>
+            </div>
+            <div class="rule-box">
+              <span class="rule-num">04</span>
+              <h4>Unexpected Attachments</h4>
+              <p>Invoices or scholarship forms ending in <code>.exe</code>, <code>.iso</code>, <code>.zip</code>, or macro-enabled documents.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: Password Safety Checker & Generator -->
+    <section class="section password-section" id="password-checker">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">ZERO-KNOWLEDGE CLIENT TESTER</div>
+          <h2 class="section-title">Client-Side Password Safety Checker</h2>
+          <p class="section-desc">
+            Test how resilient your password is against modern brute-force dictionaries and GPU cracking clusters. 
+            Runs 100% locally in your browser memory — zero passwords are ever transmitted or saved.
+          </p>
+        </div>
+
+        <!-- Privacy Shield Banner -->
+        <div class="privacy-guarantee-banner">
+          <div class="privacy-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <div class="privacy-text">
+            <strong>100% Client-Side Evaluation Guarantee:</strong>
+            This checker evaluates password entropy strictly via local JavaScript regex & dictionary checks. No network requests, cookies, or backend servers are involved.
+          </div>
+        </div>
+
+        <div class="checker-layout">
+          
+          <!-- Left: Input & Strength Gauge -->
+          <div class="checker-card">
+            <div class="input-group-custom">
+              <label for="password-input" class="input-label">Enter a Test Password (or passphrase):</label>
+              <div class="input-field-wrapper">
+                <input 
+                  type="password" 
+                  id="password-input" 
+                  class="password-input" 
+                  placeholder="Type a password to test..." 
+                  autocomplete="off" 
+                  spellcheck="false"
+                >
+                <button type="button" id="toggle-pw-visibility" class="pw-eye-btn" aria-label="Toggle password visibility">
+                  <svg id="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Dynamic Strength Bar -->
+            <div class="strength-meter-wrap">
+              <div class="strength-header">
+                <span class="strength-label-title">Calculated Strength:</span>
+                <span id="strength-label" class="strength-level-tag level-empty">Awaiting Input</span>
+              </div>
+              <div class="strength-meter-track">
+                <div id="strength-bar" class="strength-bar"></div>
+              </div>
+            </div>
+
+            <!-- Estimated Crack Time -->
+            <div class="crack-time-display">
+              <div class="crack-time-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="crack-time-content">
+                <span class="crack-time-caption">Estimated Time for a Supercomputer to Crack:</span>
+                <span id="crack-time-value" class="crack-time-num">Enter a password above</span>
+              </div>
+            </div>
+
+            <!-- Criteria Checklist -->
+            <div class="criteria-grid">
+              <div class="criterion-item" id="crit-length">
+                <span class="crit-icon">✕</span>
+                <span class="crit-text">At least 12 characters (16+ recommended)</span>
+              </div>
+              <div class="criterion-item" id="crit-upper">
+                <span class="crit-icon">✕</span>
+                <span class="crit-text">Uppercase letters (A-Z)</span>
+              </div>
+              <div class="criterion-item" id="crit-lower">
+                <span class="crit-icon">✕</span>
+                <span class="crit-text">Lowercase letters (a-z)</span>
+              </div>
+              <div class="criterion-item" id="crit-number">
+                <span class="crit-icon">✕</span>
+                <span class="crit-text">Numbers (0-9)</span>
+              </div>
+              <div class="criterion-item" id="crit-special">
+                <span class="crit-icon">✕</span>
+                <span class="crit-text">Special symbols (!@#$%^&*...)</span>
+              </div>
+              <div class="criterion-item" id="crit-pattern">
+                <span class="crit-icon">✓</span>
+                <span class="crit-text">No common words or repeating patterns</span>
+              </div>
+            </div>
+
+            <!-- Context Advice Alert -->
+            <div id="pw-advice-box" class="pw-advice-box" style="display: none;"></div>
+
+          </div>
+
+          <!-- Right: Strong Passphrase / Password Generator -->
+          <div class="generator-card">
+            <div class="generator-header">
+              <div class="gen-badge">Built-In Utility</div>
+              <h3 class="gen-title">Generate High-Entropy Password</h3>
+              <p class="gen-desc">Need a secure password right now? Generate cryptographically random keys locally.</p>
+            </div>
+
+            <!-- Generated Output Display -->
+            <div class="gen-output-box">
+              <span id="generated-password-display" class="gen-pw-text">Click Generate Below</span>
+              <button id="copy-pw-btn" class="btn btn-xs btn-outline-cyan copy-btn" title="Copy to clipboard">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Generator Controls -->
+            <div class="gen-controls">
+              <div class="slider-control">
+                <div class="slider-header">
+                  <span>Length: <strong id="pw-length-val">16</strong> characters</span>
+                </div>
+                <input type="range" id="pw-length-slider" min="8" max="32" value="16" class="range-slider">
+              </div>
+
+              <div class="gen-options-grid">
+                <label class="gen-option">
+                  <input type="checkbox" id="gen-opt-upper" checked>
+                  <span>Uppercase (A-Z)</span>
+                </label>
+                <label class="gen-option">
+                  <input type="checkbox" id="gen-opt-lower" checked>
+                  <span>Lowercase (a-z)</span>
+                </label>
+                <label class="gen-option">
+                  <input type="checkbox" id="gen-opt-num" checked>
+                  <span>Numbers (0-9)</span>
+                </label>
+                <label class="gen-option">
+                  <input type="checkbox" id="gen-opt-sym" checked>
+                  <span>Symbols (!@#$%)</span>
+                </label>
+              </div>
+
+              <div class="gen-actions">
+                <button type="button" id="generate-pw-btn" class="btn btn-cyan btn-block">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                  <span>Generate New Secure Password</span>
+                </button>
+                <button type="button" id="use-in-checker-btn" class="btn btn-outline-light btn-block btn-sm">
+                  <span>Test This in Checker Above</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Passphrase Formula Tip -->
+            <div class="passphrase-tip-card">
+              <div class="tip-badge-sm">PRO TIP</div>
+              <h5>The XKCD Passphrase Secret</h5>
+              <p>4 random dictionary words (e.g. <code>correct-horse-battery-staple</code>) contain 44 bits of entropy—exponentially harder for computers to guess, yet easy for humans to remember!</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: Cyber Safety Quiz -->
+    <section class="section quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">TEST YOUR INSTINCTS</div>
+          <h2 class="section-title">Interactive Cyber Safety Quiz</h2>
+          <p class="section-desc">
+            Put your cybersecurity reflexes to the test across 10 real-world college scenarios. 
+            Receive instant feedback, discover common traps, and earn your Cyber Guardian rank.
+          </p>
+        </div>
+
+        <!-- Quiz Container -->
+        <div class="quiz-container-box">
+          
+          <!-- Quiz Active Screen -->
+          <div id="quiz-active-screen" class="quiz-screen">
+            
+            <!-- Quiz Header Stats -->
+            <div class="quiz-top-bar">
+              <div class="quiz-progress-info">
+                <span class="q-current-badge">Question <span id="q-number">1</span> of <span id="q-total">10</span></span>
+                <span class="q-category-tag" id="q-category">Phishing & Social Engineering</span>
+              </div>
+              <div class="quiz-score-badge">
+                <span>Score: </span>
+                <strong id="quiz-live-score">0</strong>
+              </div>
+            </div>
+
+            <!-- Quiz Progress Bar -->
+            <div class="quiz-progress-track">
+              <div id="quiz-progress-fill" class="quiz-progress-fill" style="width: 10%;"></div>
+            </div>
+
+            <!-- Question Scenario Card -->
+            <div class="question-card">
+              <div class="scenario-pill">SCENARIO</div>
+              <h3 id="question-text" class="question-prompt">
+                Loading quiz scenario...
+              </h3>
+            </div>
+
+            <!-- Multiple Choice Options -->
+            <div class="options-container" id="quiz-options">
+              <!-- Injected by JavaScript -->
+            </div>
+
+            <!-- Instant Feedback Explanation Box -->
+            <div id="quiz-feedback-box" class="quiz-feedback-box" style="display: none;">
+              <div class="feedback-icon" id="feedback-icon"></div>
+              <div class="feedback-text-wrap">
+                <h4 id="feedback-headline">Correct Decision!</h4>
+                <p id="feedback-explanation">Explanation text goes here...</p>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="quiz-actions-footer">
+              <button id="quiz-next-btn" class="btn btn-cyan btn-lg" style="display: none;">
+                <span>Next Scenario</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quiz Result Screen (Hidden by default) -->
+          <div id="quiz-result-screen" class="quiz-screen" style="display: none;">
+            <div class="result-card-inner text-center">
+              
+              <div class="result-badge-halo">
+                <div class="result-score-circle">
+                  <span id="final-score-num" class="score-big">8</span>
+                  <span class="score-denom">/ 10</span>
+                </div>
+              </div>
+
+              <h3 id="result-rank-title" class="result-title">Digital Cyber Defender</h3>
+              <p id="result-rank-desc" class="result-summary">
+                Impressive reflexes! You successfully identified the majority of AI and cyber risks, but a few subtle traps caught you off guard.
+              </p>
+
+              <!-- Score Metrics breakdown -->
+              <div class="result-metrics-grid">
+                <div class="res-metric">
+                  <span class="res-label">Accuracy</span>
+                  <span id="res-accuracy" class="res-val">80%</span>
+                </div>
+                <div class="res-metric">
+                  <span class="res-label">Correct Answers</span>
+                  <span id="res-correct-count" class="res-val text-success">8</span>
+                </div>
+                <div class="res-metric">
+                  <span class="res-label">Areas to Review</span>
+                  <span id="res-wrong-count" class="res-val text-danger">2</span>
+                </div>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="result-actions">
+                <button id="retake-quiz-btn" class="btn btn-cyan">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                  <span>Retake Quiz</span>
+                </button>
+                <a href="#checklist" class="btn btn-outline-light">
+                  <span>Open Daily Checklist</span>
+                </a>
+              </div>
+
+              <!-- Question Review Accordion -->
+              <div class="review-accordion-wrap">
+                <button id="toggle-quiz-review-btn" class="btn btn-ghost btn-sm">
+                  <span>Review All Questions & Answers</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div id="quiz-review-list" class="quiz-review-list" style="display: none;">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: Daily Cyber Safety Checklist -->
+    <section class="section checklist-section" id="checklist">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">HABIT TRACKER</div>
+          <h2 class="section-title">Daily Student Cyber Safety Checklist</h2>
+          <p class="section-desc">
+            Consistency is the secret to total digital security. Check off your safety habits daily and weekly. 
+            Your progress is securely saved in your browser's local storage.
+          </p>
+        </div>
+
+        <div class="checklist-wrapper">
+          
+          <!-- Top Progress Tracker -->
+          <div class="checklist-progress-card">
+            <div class="progress-details">
+              <div class="progress-label-wrap">
+                <h3 class="progress-title">Your Cyber Shield Progress</h3>
+                <span id="checklist-counter-text" class="counter-text">0 of 9 completed (0%)</span>
+              </div>
+              <div class="checklist-progress-bar-bg">
+                <div id="checklist-progress-fill" class="checklist-progress-bar-active" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="checklist-controls">
+              <button id="reset-checklist-btn" class="btn btn-outline-danger btn-sm" title="Clear checked items">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                <span>Reset Checklist</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Checklist Categories Grid -->
+          <div class="checklist-categories-grid">
+
+            <!-- Category 1: Daily Habits -->
+            <div class="checklist-col">
+              <div class="col-header">
+                <div class="col-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </div>
+                <h4>Daily Routines</h4>
+              </div>
+              <div class="items-list" id="daily-items-list">
+                <!-- Check items -->
+                <label class="custom-check-box" data-id="habit-1">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Lock Screen When Leaving Desk</span>
+                    <span class="check-sub">Use Win+L or Cmd+Ctrl+Q immediately in library or hostel rooms.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-2">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Verify Sender Email & Domain</span>
+                    <span class="check-sub">Check the exact email domain before opening unexpected attachments.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-3">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Disable Auto-Connect to Wi-Fi</span>
+                    <span class="check-sub">Prevent your device from automatically associating with rogue access points.</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Category 2: Weekly Safeguards -->
+            <div class="checklist-col">
+              <div class="col-header">
+                <div class="col-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <h4>Weekly Checkups</h4>
+              </div>
+              <div class="items-list" id="weekly-items-list">
+                <label class="custom-check-box" data-id="habit-4">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Backup Course Projects Offline / Cloud</span>
+                    <span class="check-sub">Protect against ransomware or hardware failures via the 3-2-1 backup rule.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-5">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Install Pending OS & Browser Patches</span>
+                    <span class="check-sub">Restart your laptop to finish installing crucial zero-day security updates.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-6">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Audit Active Logins / Sessions</span>
+                    <span class="check-sub">Review active sessions on Google, Instagram, and WhatsApp Web; log out unused ones.</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Category 3: Monthly & AI Hygiene -->
+            <div class="checklist-col">
+              <div class="col-header">
+                <div class="col-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h4>Monthly & AI Defense</h4>
+              </div>
+              <div class="items-list" id="monthly-items-list">
+                <label class="custom-check-box" data-id="habit-7">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Sanitize Shared AI Prompts</span>
+                    <span class="check-sub">Verify you never fed API tokens, passwords, or personal student IDs into public LLMs.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-8">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Revoke Third-Party App Permissions</span>
+                    <span class="check-sub">Remove obsolete mobile apps & Google sign-in permissions given to games or quizzes.</span>
+                  </div>
+                </label>
+
+                <label class="custom-check-box" data-id="habit-9">
+                  <input type="checkbox" class="checklist-item-input">
+                  <span class="custom-check-mark"></span>
+                  <div class="check-text-wrap">
+                    <span class="check-headline">Confirm Family Emergency Safe-Word</span>
+                    <span class="check-sub">Ensure parents know the unique code word to neutralize AI audio cloning phone scams.</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- All Completed Celebration Banner -->
+          <div id="checklist-complete-banner" class="checklist-complete-banner" style="display: none;">
+            <div class="complete-badge-icon">🛡️</div>
+            <div class="complete-text">
+              <h4>All 9 Hygiene Habits Checked!</h4>
+              <p>Outstanding commitment! Your digital fortress is fortified against 99% of common student cyber vulnerabilities.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: Student Awareness Campaign Hub -->
+    <section class="section campaign-section" id="campaign">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">STUDENT ADVOCACY & OUTREACH</div>
+          <h2 class="section-title">Awareness Campaign Hub & Slogans</h2>
+          <p class="section-desc">
+            Spread cybersecurity literacy across your college campus, hostel, and social feeds. 
+            Share tips, learn catchy security slogans, and generate your official Cyber Safety Pledge certificate.
+          </p>
+        </div>
+
+        <!-- Slogans Ribbon / Carousel -->
+        <div class="slogans-container">
+          <div class="slogans-header">
+            <span class="slogans-badge">CAMPUS SLOGANS</span>
+            <div class="slogans-nav">
+              <button id="slogan-prev-btn" class="slogan-arrow-btn" aria-label="Previous slogan">❮</button>
+              <button id="slogan-next-btn" class="slogan-arrow-btn" aria-label="Next slogan">❯</button>
+            </div>
+          </div>
+          <div class="slogan-card-view">
+            <blockquote id="slogan-quote" class="slogan-quote">
+              "Passwords are like toothbrushes: pick a good one, don't share it, and change it regularly!"
+            </blockquote>
+            <div class="slogan-footer">
+              <span id="slogan-author" class="slogan-author">— Student Cyber Hygiene Golden Principle</span>
+              <button id="copy-slogan-btn" class="btn btn-xs btn-outline-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy Slogan</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campaign Awareness Cards Grid -->
+        <div class="campaign-cards-grid">
+          
+          <div class="awareness-card">
+            <div class="card-tag tag-cyan">AI Threat Spotlight</div>
+            <h3>Generative AI Voice Scams</h3>
+            <p>Scammers capture 5 seconds of your speech from reels, clone your voice using generative models, and phone your parents pretending you need emergency cash.</p>
+            <div class="defense-step">
+              <strong>Countermeasure:</strong> Establish an offline family passphrase that an AI clone could never guess.
+            </div>
+            <button class="btn-share-tip" data-tip="🚨 Student Cyber Alert: AI can clone your voice from 5-second Instagram reels! Establish an emergency offline safe-word with parents to defeat phone distress scams. #CyberHygiene">
+              <span>Copy Shareable Tip</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+            </button>
+          </div>
+
+          <div class="awareness-card">
+            <div class="card-tag tag-purple">Campus QR Traps</div>
+            <h3>Beware of "Quishing" (QR Phishing)</h3>
+            <p>Malicious QR stickers pasted over legitimate cafeteria menus or campus notice boards direct students to credential-harvesting phishing portals or malicious APK downloads.</p>
+            <div class="defense-step">
+              <strong>Countermeasure:</strong> Always preview the decoded destination URL before confirming browser redirection.
+            </div>
+            <button class="btn-share-tip" data-tip="⚠️ Campus Safety Tip: Never blindly scan unverified QR stickers on notice boards or cafe counters! Always preview the full URL before logging in. #StaySafeOnline">
+              <span>Copy Shareable Tip</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+            </button>
+          </div>
+
+          <div class="awareness-card">
+            <div class="card-tag tag-red">Piracy Danger</div>
+            <h3>Cracked Software & Free Game Mods</h3>
+            <p>Over 70% of cracked software, torrent game keygens, and cheat engines contain silent Infostealers (e.g. Lumma, RedLine) that exfiltrate saved passwords and browser cookies.</p>
+            <div class="defense-step">
+              <strong>Countermeasure:</strong> Leverage free student GitHub packs, open-source alternatives, or authorized educational licenses.
+            </div>
+            <button class="btn-share-tip" data-tip="🛡️ Student Tech Tip: Cracked software isn't free—it costs your passwords and cookies. Use free open-source software and official Student Developer Packs! #CyberSmart">
+              <span>Copy Shareable Tip</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+            </button>
+          </div>
+
+          <div class="awareness-card">
+            <div class="card-tag tag-yellow">Job & Internship Fraud</div>
+            <h3>Work-From-Home & Telegram Scams</h3>
+            <p>Messages promising ₹3,000/day for liking YouTube videos or typing assignments are advance-fee pyramid schemes. They eventually ask you to deposit money to "unlock" earnings.</p>
+            <div class="defense-step">
+              <strong>Countermeasure:</strong> Legitimate companies will NEVER ask students to pay for onboarding or tasks.
+            </div>
+            <button class="btn-share-tip" data-tip="💡 Student Career Alert: Real companies never charge for interviews or require payment to unlock earnings. Block paid-task Telegram scams immediately! #CyberAware">
+              <span>Copy Shareable Tip</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Student Cyber Pledge Certificate Generator -->
+        <div class="pledge-section-wrapper">
+          <div class="pledge-card">
+            <div class="pledge-header text-center">
+              <span class="pledge-badge">CAPSTONE STUDENT COMMITMENT</span>
+              <h3 class="pledge-title">Generate Your Cyber Hygiene Pledge Certificate</h3>
+              <p class="pledge-subtitle">Commit to ethical digital citizenship. Enter your name below to generate a printable or saveable Student Cyber Pledge.</p>
+            </div>
+
+            <div class="pledge-form">
+              <div class="pledge-input-group">
+                <input type="text" id="pledge-student-name" placeholder="Enter your full student name (e.g., Alex Johnson)" maxlength="40">
+                <button type="button" id="generate-certificate-btn" class="btn btn-cyan">
+                  <span>Generate Certificate</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Certificate Display Preview (Hidden until generated) -->
+            <div id="certificate-preview-box" class="certificate-preview-box" style="display: none;">
+              <div class="certificate-frame" id="printable-certificate">
+                <div class="cert-border">
+                  <div class="cert-header">
+                    <div class="cert-logo-text">CYBERHYGIENE.AI // STUDENT DEFENSE INITIATIVE</div>
+                    <div class="cert-seal">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                    </div>
+                  </div>
+
+                  <h2 class="cert-main-title">CERTIFICATE OF CYBER HYGIENE PLEDGE</h2>
+                  <p class="cert-presented">This document certifies that</p>
+                  
+                  <h3 id="cert-student-name" class="cert-name">STUDENT NAME</h3>
+                  
+                  <p class="cert-statement">
+                    has officially committed to practicing proactive cyber hygiene, safeguarding private credentials, 
+                    rejecting pirated malware vectors, identifying AI phishing deceptions, and defending digital peers from online threats.
+                  </p>
+
+                  <div class="cert-footer">
+                    <div class="cert-col">
+                      <span class="cert-line"></span>
+                      <span class="cert-sub">Date: <strong id="cert-date">November 2026</strong></span>
+                    </div>
+                    <div class="cert-col cert-status-col">
+                      <span class="cert-badge-text">STATUS: VERIFIED GUARDIAN</span>
+                    </div>
+                    <div class="cert-col">
+                      <span class="cert-line"></span>
+                      <span class="cert-sub">AI Cyber Defense Initiative</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cert-actions text-center">
+                <button id="print-certificate-btn" class="btn btn-outline-cyan btn-sm">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  <span>Print / Save as PDF</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: Official Cybercrime Reporting Guide (India Focus) -->
+    <section class="section report-section" id="report">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">OFFICIAL LEGAL RECOURSE IN INDIA</div>
+          <h2 class="section-title">Official Cybercrime Reporting Guide</h2>
+          <p class="section-desc">
+            If you or a peer fall victim to online fraud, cyber harassment, or account hijacking, knowing exactly where 
+            and how to report can recover stolen funds and protect others.
+          </p>
+        </div>
+
+        <!-- Official Disclaimer Banner -->
+        <div class="official-notice-banner">
+          <div class="notice-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <div class="notice-content">
+            <strong>Educational Awareness Notice:</strong>
+            This website is an educational guidance campaign and does not collect or transmit crime reports. 
+            All reports must be lodged directly through the official Government of India channels listed below.
+          </div>
+        </div>
+
+        <!-- Key Official Contacts Big Cards -->
+        <div class="official-contacts-grid">
+          
+          <!-- Helpline 1930 -->
+          <div class="contact-card card-accent-blue">
+            <div class="contact-card-top">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <span class="contact-tag">Immediate Financial Fraud</span>
+            </div>
+            <h3 class="contact-title">National Cyber Helpline</h3>
+            <div class="contact-highlight-num">
+              <a href="tel:1930" class="tel-link">1930</a>
+            </div>
+            <p class="contact-desc">
+              Toll-free national helpline dedicated to freezing fraudulent financial transactions (UPI, credit cards, netbanking) in real time.
+            </p>
+            <div class="contact-rule-badge">
+              <strong>The Golden Hour Rule:</strong> Calling 1930 within 2 hours of unauthorized debit allows law enforcement to freeze money in the beneficiary account before withdrawal.
+            </div>
+            <div class="contact-action-wrap">
+              <a href="tel:1930" class="btn btn-cyan btn-block">
+                <span>Call 1930 Now</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- National Portal cybercrime.gov.in -->
+          <div class="contact-card card-accent-cyan">
+            <div class="contact-card-top">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <span class="contact-tag">Official Reporting Portal</span>
+            </div>
+            <h3 class="contact-title">National Cyber Crime Portal</h3>
+            <div class="contact-highlight-url">
+              <span>cybercrime.gov.in</span>
+            </div>
+            <p class="contact-desc">
+              The central online portal under the Ministry of Home Affairs (MHA), Government of India, to register complaints for all categories of cybercrimes.
+            </p>
+            <div class="contact-categories-list">
+              <span>✓ Crime Against Women & Children (Anonymous option)</span>
+              <span>✓ Financial Cyber Frauds</span>
+              <span>✓ Identity Theft, Sextortion & Cyberbullying</span>
+            </div>
+            <div class="contact-action-wrap">
+              <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-block">
+                <span>Visit Official Portal (cybercrime.gov.in)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Incident-Specific Guidance Matrix -->
+        <div class="incident-matrix-card">
+          <h3 class="matrix-title">Which Reporting Option Should Students Use?</h3>
+          
+          <div class="matrix-grid">
+            
+            <div class="matrix-item">
+              <div class="matrix-category">
+                <span class="cat-pill pill-red">Financial Scams</span>
+                <h4>UPI Fraud / Debit OTP / Card Phishing</h4>
+              </div>
+              <div class="matrix-action">
+                <strong>Action Protocol:</strong>
+                <ol>
+                  <li><strong>Step 1:</strong> Call <strong>1930</strong> immediately to initiate payment freeze.</li>
+                  <li><strong>Step 2:</strong> Call your bank customer care to block your card and UPI ID.</li>
+                  <li><strong>Step 3:</strong> File a detailed incident report on <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">cybercrime.gov.in</a>.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="matrix-item">
+              <div class="matrix-category">
+                <span class="cat-pill pill-purple">Harassment & Safety</span>
+                <h4>Cyberbullying / Deepfake Defamation / Sextortion</h4>
+              </div>
+              <div class="matrix-action">
+                <strong>Action Protocol:</strong>
+                <ol>
+                  <li><strong>Step 1:</strong> Do not pay blackmailers; block communication immediately.</li>
+                  <li><strong>Step 2:</strong> Report on <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">cybercrime.gov.in</a> under "Report Crime Against Women & Children" (can report anonymously).</li>
+                  <li><strong>Step 3:</strong> Report content directly to the platform's Resident Grievance Officer in India.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="matrix-item">
+              <div class="matrix-category">
+                <span class="cat-pill pill-yellow">Account Takeover</span>
+                <h4>Hacked Instagram / Google / College Portal</h4>
+              </div>
+              <div class="matrix-action">
+                <strong>Action Protocol:</strong>
+                <ol>
+                  <li><strong>Step 1:</strong> Use official account recovery flows via registered emergency email.</li>
+                  <li><strong>Step 2:</strong> Inform friends on other channels so they ignore impersonation messages.</li>
+                  <li><strong>Step 3:</strong> File an identity theft complaint at the local Cyber Police Station if recovery fails.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="matrix-item">
+              <div class="matrix-category">
+                <span class="cat-pill pill-blue">Malicious Sites</span>
+                <h4>Phishing Domains & Fake University Portals</h4>
+              </div>
+              <div class="matrix-action">
+                <strong>Action Protocol:</strong>
+                <ol>
+                  <li><strong>Step 1:</strong> Forward the phishing email or link to <strong>incident@cert-in.org.in</strong> (CERT-In).</li>
+                  <li><strong>Step 2:</strong> Report the phishing URL to Google Safe Browsing and Microsoft Defender for takedown.</li>
+                  <li><strong>Step 3:</strong> Alert your college IT department if a campus portal is impersonated.</li>
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Evidence Preservation Checklist -->
+        <div class="evidence-box">
+          <div class="evidence-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <div>
+              <h4>Critical Evidence to Preserve Before Reporting</h4>
+              <p>Police and cyber cells require concrete digital evidence. Never delete messages or wipe your phone before documenting:</p>
+            </div>
+          </div>
+          <div class="evidence-checklist-grid">
+            <div class="ev-item">
+              <span class="ev-check">✔</span>
+              <span><strong>Transaction Reference:</strong> UTR number, UPI transaction ID, bank statement copy.</span>
+            </div>
+            <div class="ev-item">
+              <span class="ev-check">✔</span>
+              <span><strong>Screenshots:</strong> Full uncropped screenshots showing the scammer's username, phone number, and timestamp.</span>
+            </div>
+            <div class="ev-item">
+              <span class="ev-check">✔</span>
+              <span><strong>Email Headers:</strong> Full `.eml` or RFC 822 original message headers showing the true sender IP.</span>
+            </div>
+            <div class="ev-item">
+              <span class="ev-check">✔</span>
+              <span><strong>Voice / Call Records:</strong> Audio recordings of extortion calls and the caller's phone numbers.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <svg class="logo-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 8v4"/>
+            <path d="M12 16h.01"/>
+          </svg>
+          <span class="footer-title">CyberHygiene<span class="highlight-cyan">.AI</span></span>
+        </div>
+        <p class="footer-desc">
+          An interactive, zero-data-collection educational platform designed to empower students with actionable cybersecurity reflexes and defensive habits in the AI era.
+        </p>
+        <div class="footer-badges">
+          <span class="f-badge">100% Client-Side</span>
+          <span class="f-badge">Zero Backend</span>
+          <span class="f-badge">College Capstone Ready</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Campaign Home</a></li>
+          <li><a href="#tips">Cyber Hygiene Habits</a></li>
+          <li><a href="#phishing">Phishing Link Inspector</a></li>
+          <li><a href="#password-checker">Password Safety Meter</a></li>
+          <li><a href="#quiz">10-Question Cyber Quiz</a></li>
+          <li><a href="#checklist">Student Daily Checklist</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Official Support (India)</h4>
+        <ul class="footer-links">
+          <li><a href="tel:1930">📞 National Helpline: 1930</a></li>
+          <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer">🌐 cybercrime.gov.in</a></li>
+          <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener noreferrer">🛡️ CERT-In (incident@cert-in.org.in)</a></li>
+          <li><a href="tel:112">🚨 National Emergency: 112</a></li>
+          <li><a href="https://infosecawareness.in" target="_blank" rel="noopener noreferrer">📚 ISEA Awareness Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Security & Privacy</h4>
+        <p class="footer-note">
+          This application strictly executes in the browser client memory. No credentials, keystrokes, names, or checklist statuses are ever sent to remote servers or third parties.
+        </p>
+        <div class="footer-credit">
+          Developed for Academic & Cybersecurity Awareness Demonstration.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 AI Cyber Hygiene Awareness Campaign for Students. Open Educational Resource.</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
